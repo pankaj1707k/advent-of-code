@@ -62,7 +62,7 @@ def main():
             with open(get_file_path(f"{t}.txt"), "w") as out:
                 for i in range(Y):
                     for j in range(X):
-                        if (i, j) in final:
+                        if (j, i) in final:
                             out.write("#")
                         else:
                             out.write(".")
